@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+	
+
+	<header class="site-header">
+		
+		<div class="bar">
+			<a href="index.html"><img src="img/logo.png"></a>
+
+			<img src="img/24.png" id="hours">
+		</div>
+	</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Team Members</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	<br><br><br>
+
+	<main class="content">
+	<form action="">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" placeholder="your name" required> 
+
+			<label for="email"> E-mail: </label>
+			<input type="email" name="email" id="email" placeholder="your personal e-mail" required>
+
+			<label for="phone-number"> Phone number: </label>
+			<input type="tel" id="phone" name="phone" placeholder="your phone number" required>
+
+			<label for="message"> Message:</label>
+			<textarea id="message"> </textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for="options"> Country</label>
+			<select id="options">
+				<option value="" disabled selected> --- select ---</option>
+				<option value="usa">United States</option>
+				<option value="mexico">Mexico</option>				
+			</select>
+			<br><br>
+
+			<label for="number">Age</label>
+			<input type="number" name="number" min="0" max="100" step="1">
+
+			
+		</fieldset>
+
+
+		<fieldset>
+			<legend>How can we contact you?</legend>
+			<label for="telephone">Telephone</label>
+			<input type="radio" name="contact" value="telephone" id="telephone">
+
+			<label for="email">E-mail</label>
+			<input type="radio" name="email" value="email" id="email">
+
+			<p>if you select telephone, select date and hour</p>
+			<label>Date:</label>
+			<input type="date" name="date" id="date">
+
+			<label for="hour">Hour:</label>
+			<input type="time" name="hour" id="hour" min="09:00" max="18:00">
+		</fieldset>
+
+		<input type="submit" name="send" class="btn">
+
+	</form>
+	</main>
+</body>
+</html>
